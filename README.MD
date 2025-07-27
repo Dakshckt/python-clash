@@ -1,2 +1,4 @@
 -- FONT FILE is copied from chatgpt 
 -- Other Every Thing is Hand Written
+
+This is a python learning game which contains only three stages for Variables , Function and Loops where the player leanrs about the concept from the area and slove the question that are given to them in the gate

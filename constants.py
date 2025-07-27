@@ -1,0 +1,61 @@
+import pygame
+pygame.init()
+pygame.font.init()
+
+
+DISBALE_KEY = False
+
+WIDTH = 650
+HEIGHT = 650
+EXTRA_WIDTH = 950
+
+FPS = 10
+STEP = 50
+
+BACKGROUND_BOX = 50
+
+PLAYER_WIDTH = 50
+PLAYER_HEIGHT = 50
+
+
+BANNER_IMAGE = pygame.image.load("./Assets/Banner/banner_modern.png")
+BANNER_WIDTH = 550
+BANNER_HEIGHT = 100
+BANNER_CENTER_X = WIDTH - BANNER_WIDTH - 50
+BANNER_CENTER_Y = 250
+BANNER_DISPLAY = True
+
+
+STAGE_1_QUESTION = 5
+STAGE_2_QUESTION = 5
+STAGE_3_QUESTION = 5
+
+HEADING = pygame.font.Font(None , 32)
+FONT = pygame.font.SysFont("Arial", 20) 
+
+COMPLETED_STAGE1 = False
+COMPLETED_STAGE2 = False
+COMPLETED_STAGE3 = False
+
+
+EXAM_1 = False
+EXAM_2 = False
+EXAM_3 = False
+
+
+OPTION_BUTTON_WIDTH = BACKGROUND_BOX * 2
+OPTION_BUTTON_HEIGHT = BACKGROUND_BOX
+
+REARRANGE_PLAYER_POSITION = False
+
+def restart():
+    global COMPLETED_STAGE1 , COMPLETED_STAGE2 , COMPLETED_STAGE3 , EXAM_1 , EXAM_2 , EXAM_3 , DISBALE_KEY
+
+    COMPLETED_STAGE1 = False
+    COMPLETED_STAGE2 = False
+    COMPLETED_STAGE3 = False
+
+    EXAM_1 = False
+    EXAM_2 = False
+    EXAM_3 = False
+    DISBALE_KEY = False
